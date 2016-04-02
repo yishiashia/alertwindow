@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<!--[if lt IE 9]>
+	<script src="javascripts/html5shiv.js?date=20140102"></script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div class="block_window">
+		<div class="alert_window">
+			<button id="dismiss_button" class="block_button right_top_corner"><i class="fa fa-times fa-2x"></i></button>
+			<button id="check_button" class="block_button gray_button">
+				<i class="fa fa-check fa-2x"></i>
+			</button>
+			<div class="finger_block"><i class="fa fa-hand-pointer-o fa-2x"></i></div>
+			<div class="message_window noselect">
+				<input id="use_member_to_login" name="use_member_to_login" type="hidden" value="n">
+				Alert顯示訊息<br>Alert顯示訊息<br>Alert顯示訊息
+			</div>
+			<div class="footer-action-container">
+				<div class="btn-container"><button id="alert_do_submit" class="btn btn-primary">確定</button></div>
+				<div class="btn-container"><button id="cancel_button" class="btn btn-link">取消，回到首頁</button></div>
+			</div>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.block_window').click(function() {
+        $('.block_window').hide();
+    });
+
+    $('.alert_window').click(function( event ) {
+        event.stopPropagation();
+        // Do something
+    });
+
+    $('#dismiss_button').click(function() {
+        $('.block_window').hide();
+    });
+
+    $('.message_window').click(function() {
+        if($('#use_member_to_login').val() == 'n') {
+            $('#use_member_to_login').val("y");
+            $('#check_button').removeClass("gray_button");
+            $('#check_button').addClass("blue_button");
+            $('.message_window').addClass("blue_word");
+            $('i.fa-check').show();
+        } else {
+            $('#use_member_to_login').val("n");
+            $('#check_button').removeClass("blue_button");
+            $('#check_button').addClass("gray_button");
+            $('.message_window').removeClass("blue_word");
+            $('i.fa-check').hide();
+        }
+    });
+
+    $('#check_button').click(function() {
+        if($('#use_member_to_login').val() == 'n') {
+            $('#use_member_to_login').val("y");
+            $('#check_button').removeClass("gray_button");
+            $('#check_button').addClass("blue_button");
+            $('.message_window').addClass("blue_word");
+            $('i.fa-check').show();
+        } else {
+            $('#use_member_to_login').val("n");
+            $('#check_button').removeClass("blue_button");
+            $('#check_button').addClass("gray_button");
+            $('.message_window').removeClass("blue_word");
+            $('i.fa-check').hide();
+        }
+    });
+
+    $('#cancel_button').click(function() {
+        if($('#use_member_to_login').val() == 'n') {
+            $('.block_window').hide();
+        }
+    });
+
+    $('#alert_do_submit').click(function() {
+        check_member_user = true;
+        login_form.submit();
+    });
+
+    $('i.fa-check').hide();
+});
+</script>
+</body>
+</html>

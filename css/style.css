@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+body {
+  height: 800px;
+}
+
+/* line 264, ../sass/style_cht_v2.scss */
+.block_window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51, 51, 51, 0.7);
+  z-index: 9999;
+}
+
+/* line 275, ../sass/style_cht_v2.scss */
+.alert_window {
+  position: relative;
+  margin: 0 auto;
+  top: 150px;
+  width: 90%;
+  max-width: 500px;
+  background-color: white;
+  z-index: 10000;
+  color: #6E6E6E;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 289, ../sass/style_cht_v2.scss */
+.alert_check {
+  font-size: 26px;
+  font-family: "微軟正黑體","Microsoft JhengHei","helvetica";
+}
+
+/* line 294, ../sass/style_cht_v2.scss */
+#check_button {
+  position: absolute;
+  left: 30px;
+  top: 40px;
+}
+
+/* line 300, ../sass/style_cht_v2.scss */
+.block_button {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+/* line 310, ../sass/style_cht_v2.scss */
+.right_top_corner {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/* line 316, ../sass/style_cht_v2.scss */
+.gray_button {
+  color: #BDBDBD;
+  background-color: white;
+  border: 2px solid #BDBDBD;
+  font-size: 12px;
+}
+
+/* line 323, ../sass/style_cht_v2.scss */
+.blue_button {
+  color: #0040FF;
+  background-color: white;
+  border: 2px solid #0040FF;
+  font-size: 12px;
+}
+
+/* line 330, ../sass/style_cht_v2.scss */
+.blue_word {
+  color: #0040FF;
+  font-weight: bold;
+}
+
+/* line 335, ../sass/style_cht_v2.scss */
+.message_window {
+  position: relative;
+  top: 30px;
+  min-height: 40px;
+  margin: 30px 15px 0px 95px;
+  cursor: default;
+}
+
+/* line 342, ../sass/style_cht_v2.scss */
+.footer-action-container {
+  margin: 80px 15px 50px 15px;
+}
+
+/* line 346, ../sass/style_cht_v2.scss */
+.btn-primary {
+  font-size: 18px;
+  color: #fff;
+  background: #00bfff;
+}
+
+/* line 352, ../sass/style_cht_v2.scss */
+.btn-link {
+  font-size: 18px;
+  color: #848484;
+  background: none;
+}
+
+/* line 358, ../sass/style_cht_v2.scss */
+.btn {
+  width: 100%;
+  height: 55px;
+  border: none;
+}
+
+/* line 364, ../sass/style_cht_v2.scss */
+.finger_block {
+  position: absolute;
+  right: 50px;
+  top: 80px;
+  color: #A4A4A4;
+}
+
+/* line 371, ../sass/style_cht_v2.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE/Edge */
+  user-select: none;
+  /* non-prefixed version, currently
+     not supported by any browser */
+}
